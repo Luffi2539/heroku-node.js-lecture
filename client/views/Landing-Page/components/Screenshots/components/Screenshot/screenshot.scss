@@ -1,0 +1,63 @@
+@import '../../../../../../styles/variables.scss';
+
+.screenshot-wrapper {
+  z-index: 0;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  display: table;
+  border: 0;
+  
+  background-color: black;
+  transition: 0.5s all ease-in;
+  cursor: pointer;
+
+  .screenshot {
+    border: 0;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+
+
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .screenshot-caption {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+
+
+    opacity: 0;
+    color: #fff;
+    background: $primary-app-color-transparent;
+    transition: all .2s;
+
+
+    h1 {
+      margin: 10px;
+      color: $primary-text-color;
+    }
+
+    p {
+      margin: 5px;
+    }
+  }
+}
+
+.screenshot-wrapper:hover {
+  .screenshot {
+    opacity: 0.6;
+  }
+
+  .screenshot-caption {
+    opacity: 1;
+  }
+}

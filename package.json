@@ -1,0 +1,70 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "RSS game task",
+  "main": "index.js",
+  "scripts": {
+    "client-watch": "cross-env NODE_ENV=development webpack-dev-server --hot --inline",
+    "server-watch": "nodemon --exec babel-node server/server.js",
+    "client-build": "webpack --progress --hide-modules",
+    "server-build": "rm -rf server-dist && babel server -d server-dist",
+    "heroku-postbuild": "bash build/prod.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rolling-scopes-school/mrstalon-2018Q3.git"
+  },
+  "engines": {
+    "node": "10.x",
+    "npm": "6.x"
+  },
+  "author": "mrstalon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rolling-scopes-school/mrstalon-2018Q3/issues"
+  },
+  "homepage": "https://github.com/rolling-scopes-school/mrstalon-2018Q3#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "bunyan": "^1.8.12",
+    "classnames": "^2.2.6",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongoose": "^5.4.2",
+    "react": "^16.5.2",
+    "react-dnd": "^7.0.2",
+    "react-dnd-html5-backend": "^7.0.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.17",
+    "cross-env": "^5.2.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4",
+    "redux-logger": "^3.0.6",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  }
+}

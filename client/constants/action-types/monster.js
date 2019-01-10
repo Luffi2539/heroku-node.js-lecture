@@ -1,0 +1,4 @@
+export const DAMAGE_MONSTER = 'DAMAGE_MONSTER'
+export const SET_MONSTER = 'SET_MONSTER'
+export const UPGRADE_MONSTER = 'UPGRADE_MONSTER'
+export const SET_MAX_HEALTH = 'SET_MAX_HEALTH'

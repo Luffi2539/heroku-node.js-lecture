@@ -1,0 +1,47 @@
+p {
+  text-align: center;
+}
+
+.game-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+  h1 {
+    margin-top: 50px;
+  }
+
+  .spell-description-1 {
+    margin-top: 60px;
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    div {
+      margin-left: 30px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.fire-spell-color {
+  color: red;
+}
+
+.healing-spell-color {
+  color: green;
+}
+
+.frost-spell-color {
+  color: rgb(0, 81, 255);
+}
+
+.lighting-spell-color {
+  color: rgb(34, 34, 179);
+}

@@ -1,0 +1,32 @@
+@import '../../../../styles/variables.scss';
+
+.start-registration-button {
+  width: 130px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;  
+
+
+  cursor: pointer;
+  transition: 0.3s all ease-in;
+}
+
+.orange-white {
+  background-color: $primary-app-color;
+  color: white;
+}
+
+.orange-white:hover {
+  background-color: $primary-app-color-hover;
+}
+
+.white-black {
+  background-color: white;
+  color: black;
+}
+
+.white-black:hover {
+  background-color: $primary-text-color;
+}

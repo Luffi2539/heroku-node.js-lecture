@@ -1,0 +1,17 @@
+.spell-bar {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 343px;
+  max-width: 363px;
+  overflow: hidden;
+  height: 85px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  border-radius: 15px;
+
+  z-index: 5;
+  background: url('../../../../assets/spell-bar.png')
+}

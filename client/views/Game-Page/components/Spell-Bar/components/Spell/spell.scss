@@ -1,0 +1,25 @@
+.spell-container {
+  cursor: pointer;
+  width: 25%;
+  height: 100%;
+  margin-top: 20px;
+  transition: 0.2s all ease-in;
+
+  img {
+    height: 68px;
+    width: 75px;
+    border-radius: 7px;
+  }
+}
+
+.spell-container:hover {
+  filter: grayscale(100%);
+}
+
+.pressed-spell {
+  filter: grayscale(100%);
+
+  img {
+    border: 1px black solid;
+  }
+}

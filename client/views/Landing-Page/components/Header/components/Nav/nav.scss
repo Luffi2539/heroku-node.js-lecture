@@ -1,0 +1,67 @@
+@import '../../../../../../styles/variables.scss';
+
+nav {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  // font-family: 'Lato-Bold';
+
+  transition: 0.2s all ease-out;
+
+  .nav-wrapper {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      width: 350px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+
+  a {
+    height: fit-content;
+    color: $primary-text-color;
+    cursor: pointer;
+
+    transition: 0.1s all ease-in;
+  }
+
+  a:hover {
+    color: $primary-text-color-hover;
+  }
+
+  a.big-text {
+    font-weight: 700;
+  }
+}
+
+nav.scrolled-nav {
+  background-color: $scrolled-nav-bg;
+  z-index: 1;
+
+  a {
+    color: $scrolled-nav-link;
+  }
+
+  a:hover {
+    color: $primary-app-color;
+  }
+
+  a.big-text {
+    color: $primary-app-color;
+  }
+
+  a.big-text:hover {
+    color: $primary-app-color-hover;
+  }
+}

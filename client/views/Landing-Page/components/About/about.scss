@@ -1,0 +1,39 @@
+@import '../../../../styles/variables.scss';
+@import '../Header/components/Header-Text/header-text.scss';
+
+#about {
+  width: 100%;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  
+  background-color: $primary-app-color;
+
+  h1 {
+    margin: 10px;
+  }
+
+  hr {
+    width: 60px;
+    height: 3px;
+    background-color: white;
+    border: 0;
+  }
+
+  p {
+    width: 800px;
+    margin: 10px;
+
+
+    color: $primary-text-color;
+    text-align: center;
+  }
+
+  a {
+    margin-top: 15px;
+  }
+}

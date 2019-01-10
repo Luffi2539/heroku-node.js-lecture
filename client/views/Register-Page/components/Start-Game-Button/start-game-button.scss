@@ -1,0 +1,23 @@
+@import '../../../../styles/variables.scss';
+
+.start-game-button {
+  width: 130px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;  
+
+
+  cursor: pointer;
+  transition: 0.3s all ease-in;
+}
+
+.blue-white {
+  background-color: #007bff;
+  color: white;
+}
+
+.blue-white:hover {
+  background-color: #0165cf;
+}
