@@ -13,6 +13,8 @@ app.engine('html', ejs.renderFile)
 app.set('views', VIEWS_PATH)
 app.set('view engine', 'html')
 
+app.get('/registration', (req, res) => res.render('registration'))
+app.get('/game', (req, res) => res.render('game'))
 app.get('*', (req, res) => res.render('index'))
 
 app
