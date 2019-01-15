@@ -13,8 +13,8 @@ app.engine('html', ejs.renderFile)
 app.set('views', VIEWS_PATH)
 app.set('view engine', 'html')
 
+app.get('/', (req, res) => res.render('index'))
 app.get('/game', (req, res) => res.render('game'))
-app.get('*', (req, res) => res.render('index'))
 
 app
   .listen(PORT, () => console.log(`Server is listening on port: ${PORT}`))
