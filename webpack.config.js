@@ -78,7 +78,7 @@ module.exports = {
       template: 'client/index.html'
     }),
     new HtmlWebpackPlugin({
-      inject: true,
+      inject: false,
       filename: 'game.html',
       template: 'client/game.html'
     }),
