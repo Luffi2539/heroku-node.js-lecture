@@ -77,6 +77,11 @@ module.exports = {
       filename: 'index.html',
       template: 'client/index.html'
     }),
+    new HtmlWebpackPlugin({
+      inject: true,
+      filename: 'game.html',
+      template: 'client/game.html'
+    }),
     new CleanWebpackPlugin(['client-dist'])
   ]
 }
