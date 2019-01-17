@@ -12,6 +12,7 @@ function Router() {
         <Route path="/" component={LandingPage} exact />
         <Route path="/registration" component={RegisterPage} />
         <Route path="/game" component={GamePage} />
+        <Route path="*" component={LandingPage} exact />
       </Switch>
     </BrowserRouter>
   )
