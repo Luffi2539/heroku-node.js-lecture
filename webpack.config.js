@@ -42,12 +42,22 @@ module.exports = {
         }
       },
       {
-        test: /\.(ogg|mp3|ico|jpg|png|jpe?g|gif)(\?.*)?$/,
+        test: /\.(ico|jpg|png|jpe?g|gif)(\?.*)?$/,
         use: {
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
             outputPath: 'static/img/'
+          }
+        }
+      },
+      {
+        test: /\.(ogg|mp3)(\?.*)?$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'static/audio/'
           }
         }
       },
